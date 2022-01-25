@@ -1,0 +1,1510 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.main{
+    max-width: 1920px;
+    margin: auto;
+    height: 50px;
+    background-color: black;
+}
+
+.main-container{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-right a{
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+    padding: 0px 10px;
+}
+
+.main-right select{
+    margin: 0px 10px;
+}
+
+.logo{
+    max-width: 1250px;
+    margin: auto;
+    height: 150px;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-top{
+    float: right;
+    padding: 8px 0px;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+    background-color: #FF9101;
+    margin: 3px 0px;
+}
+
+.register-btn{
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+    background-color: #26A3DC;
+}
+
+.nav-bottom{
+    clear: both;
+    padding: 8px 0px;
+    text-align: right;
+}
+
+.nav-bottom a{
+    text-decoration: none;
+    color:  black;
+    padding: 5px 10px;
+}
+
+.nav-bottom a:hover{
+    background-color: #26A3DC;
+    color: white;
+}
+
+.booking{
+    max-width: 1920px;
+    margin: auto;
+    padding: 50px 0px;
+    background-image: url('../images/motion-car.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.booking.booking-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
+.booking-container{
+    max-width: 1250px;
+    margin: auto;
+}
+
+.booking-field-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.booking-text{
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+.booking-field{
+    background-color: rgba(0,0,0,.3);
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.booking-block{
+    width: 23%;
+    margin: 10px 0px;
+}
+
+.booking-field-bg{
+    margin-bottom: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid #FF9101;
+}
+
+.booking-field-bg-btn{
+    margin-bottom: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FF9101;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.booking-field-bg span{
+    font-size: 17px;
+}
+
+.field-class{
+    border: none;
+    outline: none;
+    flex-basis: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    border: 1px solid #FF9101;
+    padding: 12px 20px;
+}
+
+.field-btn{
+    border: none;
+    outline: none;
+    flex-basis: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    border: 1px solid #FF9101;
+    padding: 12px 20px;
+    color: white;
+    background-color: #FF9101;
+    cursor: pointer;
+}
+
+.booking-btn{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.btn{
+    padding: 15px 30px;
+    border: 1px solid #FF9101;
+    text-decoration: none;
+    color: black;
+    color: white;
+    transition: .3s;
+    background-color: transparent;
+}
+
+.btn-transparent:hover{
+    background-color: #FF9101;
+}
+
+.btn-color:hover{
+    background-color: transparent;
+}
+
+.btn-color{
+    background-color: #FF9101;
+    margin-left: 20px;
+}
+
+.search-btn{
+    padding: 8px 16px;
+    background-color: #FF9101;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service{
+    max-width: 1250px;
+    margin: auto;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.service-display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-block{
+    flex-basis: 23%;
+    margin: 20px 0px;
+    text-align: center;
+    border: 1px solid #FF9101;
+    padding: 30px 5px;
+    line-height: 25px;
+    background-color: #FF9101;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(110, 110, 110);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.service-display:hover .service-block{
+    filter: blur(10px);
+    transform: scale(.9);
+}
+
+.service-display .service-block:hover{
+    filter: blur(0px);
+    transform: scale(1.05);
+}
+
+.cab{
+    max-width: 1920px;
+    margin: auto;
+    padding: 60px 0px;
+    background-color: whitesmoke;
+}
+
+.cab-container{
+    max-width: 1250px;
+    margin: auto;
+}
+
+.cab-booking-block{
+    padding: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.booking-block{
+    flex-basis: 30%;
+}
+
+.cab-display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.cab-block{
+    flex-basis: 23%;
+    padding: 30px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.cab-text-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cab-text{
+    padding: 10px;
+    text-align: center;
+}
+
+.cab-text-right p:first-child{
+    position: relative;
+    right: -1px;
+}
+
+.cab-btn{
+    padding: 3px 16px;
+    background-color: #FF9101;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+
+.quote{
+    max-width: 1250px;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.quote-display{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quote-right{
+    width: 80%;
+    display: flex;
+}
+
+.destination{
+    max-width: 1920px;
+    margin: auto;
+    padding: 50px 0px;
+    background-color: whitesmoke;
+}
+
+.destination-container{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destination-block{
+    flex-basis: 19%;
+    margin: 7px 0px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.destination-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    text-align: center;
+    line-height: 130px;
+    opacity: 0;
+}
+
+.destination-block:hover .destination-overlay{
+    opacity: 1;
+}
+
+.contact{
+    max-width: 1920px;
+    margin: auto;
+    background-color: #FF9101;
+    padding: 30px 0px;
+}
+
+.contact-container{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.contact-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-img{
+    margin-right: 20px;
+}
+
+.quote-btn{
+    padding: 5px 15px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer-block{
+    flex-basis: 24%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.footer-block a{
+    text-decoration: none;
+    color: #8a8888;
+    margin: 5px 0px;
+}
+
+.news-letter{
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+    border-top: 1px solid #b3b2b2;
+    border-bottom: 1px solid #b3b2b2;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.news-left{
+    display: flex;
+    align-items: center;
+}
+
+.news-icon{
+    margin-right: 20px;
+}
+
+.email{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #FF9101;
+}
+
+.email-btn{
+    padding: 10.5px 15px;
+    outline: none;
+    border: none;
+    background-color: #FF9101;
+    color: white;
+    position: relative;
+    top: 1.5px;
+    cursor: pointer;
+}
+
+.pay-card{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+}
+
+.pay-card img{
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+.last{
+    background-color: black;
+    max-width: 1920px;
+    margin: auto;
+    height: 50px;
+    color: white;
+}
+
+.last-container{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.last-container span{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+/* style for driver dashboard */
+
+.profile{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 20px;
+    border: 1px solid #FF9101;
+    margin-top: 50px;
+    row-gap: 50px;
+}
+
+.profile-left{
+    flex-basis: 550px;
+}
+
+.profile-img{
+    border: 1px solid gray;
+    padding: 50px;
+}
+
+.profile-right{
+    flex-basis: 625px;
+}
+
+.name-header{
+    margin-top: unset;
+    margin-bottom: 40px;
+}
+
+.profile-block{
+    padding: 10px 0px;
+}
+
+.profile-block b{
+    font-size: 20px;
+}
+
+.profile-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.profile-content-block{
+    text-align: center;
+}
+
+.profile-content-block span{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid #FF9101;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 10px 30px;
+    border: 1px solid #FF9101;
+    text-align: center;
+    background-color: #FF9101;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 14px;
+    }
+
+    .main-right a{
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 14px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+    }
+
+    .service-display{
+        padding-left: 25px;
+        padding-right: 25px;
+        justify-content: space-around;
+    }
+
+    .service-block{
+        flex-basis: 300px;
+    }
+
+    .cab-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-around;
+    }
+
+    .cab-block{
+        flex-basis: 300px;
+    }
+
+    .quote{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .destination-container{
+        padding-left: 25px;
+        padding-right: 25px;
+        justify-content:space-around;
+    }
+
+    .destination-block{
+        flex-basis: 300px;
+    }
+
+    .contact-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 14px;
+    }
+
+    .main-right a{
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 14px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+    }
+
+    .service-display{
+        padding-left: 25px;
+        padding-right: 25px;
+        justify-content: space-around;
+    }
+
+    .service-block{
+        flex-basis: 300px;
+    }
+
+    .cab-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-around;
+    }
+
+    .cab-block{
+        flex-basis: 300px;
+    }
+
+    .quote{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .destination-container{
+        padding-left: 25px;
+        padding-right: 25px;
+        justify-content:space-around;
+    }
+
+    .destination-block{
+        flex-basis: 300px;
+    }
+
+    .contact-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .main{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 14px;
+    }
+
+    .main-right a{
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 14px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+    }
+
+    .service-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .service-block{
+        flex-basis: 300px;
+    }
+
+    .cab-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .cab-block{
+        flex-basis: 300px;
+    }
+
+    .quote{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .destination-container{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .destination-block{
+        flex-basis: 300px;
+    }
+
+    .contact-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .main{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 14px;
+    }
+
+    .main-right a{
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 14px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+    }
+
+    .service-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .service-block{
+        flex-basis: 300px;
+    }
+
+    .cab-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cab-block{
+        flex-basis: 300px;
+    }
+
+    .quote{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .destination-container{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .destination-block{
+        flex-basis: 300px;
+    }
+
+    .contact-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 12px;
+    }
+
+    .main-right a{
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 12px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+    }
+
+    .service-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .service-block{
+        flex-basis: 250px;
+    }
+
+    .cab-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cab-block{
+        flex-basis: 250px;
+    }
+
+    .quote{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .destination-container{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .destination-block{
+        flex-basis: 250px;
+    }
+
+    .contact-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .main{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .main-container{
+        row-gap: 10px;
+    }
+
+    .main-left{
+        font-size: 10px;
+    }
+
+    .main-right a{
+        font-size: 10px;
+        padding: 0px 3px;
+    }
+
+    .main-right a:first-child{
+        padding-left: unset;
+    }
+
+    .main-right select{
+        font-size: 10px;
+    }
+
+    .logo{
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .logo-left{
+        flex-basis: 100%;
+    }
+
+    .logo-right{
+        flex-basis: 100%;
+    }
+
+    .nav-top{
+        float: unset;
+    }
+
+    .nav-bottom a{
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+
+    .login-btn, .register-btn{
+        font-size: 12px;
+    }
+
+    .booking-text h1{
+        font-size: 22px;
+    }
+
+    .booking-text h4{
+        font-size: 12px;
+    }
+
+    .btn{
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    .service-display{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .service-block{
+        flex-basis: 220px;
+    }
+
+    .service-block p{
+        font-size: 14px;
+    }
+
+    .cab-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .booking-block{
+        flex-basis: 100%;
+    }
+
+    .cab-display{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cab-block{
+        flex-basis: 250px;
+    }
+
+    .cab-text-display{
+        font-size: 12px;
+    }
+
+    .quote{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .quote-left{
+        display: none;
+    }
+
+    .quote-right{
+        flex-basis: 100%;
+    }
+
+    .quote-right p{
+        font-size: 14px;
+    }
+
+    .destination-container{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .destination-block{
+        flex-basis: 250px;
+    }
+
+    .contact-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-left{
+        display: none;
+    }
+
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-block{
+        flex-basis: 100%;
+    }
+
+    .news-letter{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .pay-card{
+        width: 100%;
+    }
+
+    .last{
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .last-container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}
